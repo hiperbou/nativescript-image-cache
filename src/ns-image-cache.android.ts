@@ -344,7 +344,7 @@ export const clearCache = () => {
 };
 
 export const initializeOnAngular = () => {
-    if (isInitialized === false) {
+    /*if (isInitialized === false) {
         const _elementRegistry = require('nativescript-angular/element-registry');
 
         _elementRegistry.registerElement('NSImage', function() {
@@ -352,5 +352,5 @@ export const initializeOnAngular = () => {
         });
         initialize();
         isInitialized = true;
-    }
+    }*/
 };
