@@ -220,3 +220,7 @@ exports.initializeOnAngular = function () {
         exports.isInitialized = true;
     }*/
 };
+exports.invalidateImage = function(key) {
+    var imageCache = SDImageCache.sharedImageCache();
+    imageCache.removeImageForKeyWithCompletion(key, null);
+};
