@@ -302,3 +302,6 @@ exports.initializeOnAngular = function () {
         exports.isInitialized = true;
     }*/
 };
+exports.invalidateImage = function(uri) {
+    com.facebook.drawee.backends.pipeline.Fresco.getImagePipeline().evictFromMemoryCache(uri);
+};
